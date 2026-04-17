@@ -1,0 +1,59 @@
+flowchart TD
+    A([📋 Product Brief\nBrand Voice Profile]) --> B[/POST \/api\/pipeline\/generate/]
+    B --> C[(Supabase\nprojects · markets)]
+    C --> D{{"🎯 Inngest Event\ncontentfactory/project.submitted"}}
+
+    D --> E["⚡ generateContentFunction\nCreate N×M content jobs\nFan-out job.started events"]
+
+    E --> F1{{"job.started\nen-US × product_description"}}
+    E --> F2{{"job.started\nfr-FR × ad_copy"}}
+    E --> F3{{"job.started\nde-DE × meta_tags"}}
+    E --> FN{{"job.started\n… N×M total"}}
+
+    F1 & F2 & F3 & FN --> G["translateMarketFunction\n(parallel workers)"]
+
+    G --> H["🤖 Claude API\n(Vercel AI Gateway)\nGenerate source EN-US"]
+    H --> I{Translation mode?}
+
+    I -->|deepl| J["🌍 DeepL API\nMachine Translation"]
+    I -->|claude| K["🧠 Claude Transcreation\nCultural adaptation"]
+    I -->|both| J
+    J -->|draft context| K
+
+    K --> L["🔍 Back-translation QA\nKeyword overlap ratio\n< 40% → flag"]
+    L --> M["⚖️ LLM-as-Judge Eval\nTone · Brand Voice\nCultural · Hallucination\nScore 0–100"]
+
+    M -->|score ≥ 75| N["✅ review_pending\nHuman Review Queue"]
+    M -->|score < 75| O["❌ auto_rejected\nFlag for revision"]
+
+    N --> P["👤 HITL Review\nApprove / Reject\nSLA timer"]
+    P -->|approved| Q["Output Shaping"]
+
+    Q --> R["🛍️ Shopify JSON\nproduct.metafields\nshopify_translation"]
+    Q --> S["📝 WordPress JSON\npost · yoast_seo\nhreflang map"]
+    Q --> T["📦 Export Bundle\n/api/projects/:id/export"]
+
+    subgraph DB [Supabase Tables]
+        direction LR
+        DB1[(projects)]
+        DB2[(markets)]
+        DB3[(content_jobs)]
+        DB4[(outputs)]
+        DB5[(eval_scores)]
+        DB6[(reviews)]
+    end
+
+    C -.-> DB
+    G -.-> DB
+    M -.-> DB
+    P -.-> DB
+
+    style A fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style D fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style F1 fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style F2 fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style F3 fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style FN fill:#1c2333,stroke:#6366f1,color:#e6edf3
+    style N fill:#1c2333,stroke:#3fb950,color:#3fb950
+    style O fill:#1c2333,stroke:#f85149,color:#f85149
+    style DB fill:#161b22,stroke:#30363d,color:#8b949e

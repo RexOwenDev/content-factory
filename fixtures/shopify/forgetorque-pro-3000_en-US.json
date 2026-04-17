@@ -1,0 +1,37 @@
+{
+  "product": {
+    "title": "ForgeTorque Pro 3000 — Professional Torque Wrench",
+    "body_html": "<p>The ForgeTorque Pro 3000 detects calibration drift before it causes a failure. ±0.5% accuracy across the full torque range, independently verified to ISO 6789-2:2017. IP68, ATEX certified for explosive atmospheres. Used by Tier-1 aerospace OEMs and 4,000+ MRO facilities worldwide.</p><p>Real-time drift alerts. Bluetooth sync to maintenance systems. Auto-shutdown memory for 50 readings. 3-year calibration warranty.</p>",
+    "metafields": [
+      {
+        "namespace": "seo",
+        "key": "title",
+        "value": "ForgeTorque Pro 3000 — Real-Time Torque Calibration Tool",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "seo",
+        "key": "description",
+        "value": "±0.5% torque accuracy with live calibration drift detection. independently verified, ATEX certified, used by aerospace OEMs and 4,000+ MRO facilities. Request a demo.",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "content_factory",
+        "key": "generated_locale",
+        "value": "en-US",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "content_factory",
+        "key": "keywords",
+        "value": "torque wrench calibration, industrial torque tool, MRO torque equipment, ISO 6789 torque, ATEX torque wrench, calibration drift detection",
+        "type": "single_line_text_field"
+      }
+    ]
+  },
+  "locale": "en-US",
+  "translations": {
+    "title": "ForgeTorque Pro 3000 — Professional Torque Wrench",
+    "body_html": "<p>The ForgeTorque Pro 3000 detects calibration drift before it causes a failure. ±0.5% accuracy across the full torque range, independently verified to ISO 6789-2:2017. IP68, ATEX certified. Used by Tier-1 aerospace OEMs and 4,000+ MRO facilities worldwide.</p>"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "fixture-velocargo-bike",
+  "name": "VeloCargo — Urban Launch",
+  "brief": {
+    "product_name": "VeloCargo City 250W",
+    "category": "E-bikes / Urban Mobility",
+    "key_features": [
+      "250W rear hub motor (EU road-legal)",
+      "Integrated 36V / 15Ah Samsung battery — 80km range per charge",
+      "Cargo capacity: 40kg rear rack + 15kg front basket",
+      "Hydraulic disc brakes (Shimano)",
+      "Integrated front/rear lights with USB-C charging port",
+      "Smart display with GPS, cadence, and battery management",
+      "Foldable design — fits standard elevator and most car trunks"
+    ],
+    "target_audience": "Urban commuters 25–45, small business owners doing local deliveries, eco-conscious buyers replacing car trips",
+    "price_point": "€1,499 (standard) — €1,899 (premium with cargo box)",
+    "usp": "The only EU-legal cargo e-bike that folds — park it inside, not on the street",
+    "avoid_words": ["dirty", "heavy", "complicated", "slow", "expensive"],
+    "extra_context": "EN 15194 compliant. 2-year comprehensive warranty. VDE certified battery. EU delivery 3–5 days. Available in 4 colors: matte black, forest green, slate grey, sunrise orange."
+  },
+  "brand_voice": {
+    "tone": "Energetic and practical — we believe cities are better without cars and we're not shy about it",
+    "style": "Punchy. Direct. Benefits-first. Urban vernacular without being overly casual.",
+    "keywords": ["VeloCargo", "urban", "cargo", "fold", "commute"],
+    "avoid_words": ["revolutionary", "disruptive", "eco-warrior", "save the planet"],
+    "sample_copy": "Your city doesn't need another car. The VeloCargo City folds in 15 seconds, carries 55kg of cargo, and covers 80km on a single charge. It fits in your elevator. It parks in your hallway. And it costs less to run for a year than one month of city parking."
+  },
+  "target_locales": ["en-US", "en-GB", "fr-FR", "de-DE", "nl-NL", "it-IT"],
+  "content_types": ["product_description", "ad_copy", "meta_tags", "landing_page_copy"],
+  "translation_mode": "both"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "ForgeTorque Pro 3000 — Professional Torque Wrench",
+  "content": "<p>The ForgeTorque Pro 3000 detects calibration drift before it causes a failure. ±0.5% accuracy across the full torque range, independently verified to ISO 6789-2:2017. IP68, ATEX certified. Used by Tier-1 aerospace OEMs and 4,000+ MRO facilities worldwide.</p><p>Real-time drift alerts. Bluetooth sync to maintenance management systems. Auto-shutdown memory saves last 50 torque readings. 3-year calibration warranty.</p>",
+  "excerpt": "The only torque wrench with real-time calibration drift detection. independently verified ±0.5% accuracy. ATEX certified.",
+  "meta": {
+    "_yoast_wpseo_title": "ForgeTorque Pro 3000 — Real-Time Torque Calibration Tool %%sep%% %%sitename%%",
+    "_yoast_wpseo_metadesc": "±0.5% torque accuracy with live calibration drift detection. independently verified, ATEX certified, used by aerospace OEMs and 4,000+ MRO facilities. Request a demo.",
+    "_yoast_wpseo_focuskw": "torque wrench calibration",
+    "wpml_language": "en",
+    "wpml_original_id": 0
+  },
+  "hreflang": {
+    "en-US": "https://forgetorque.example.com/products/forgetorque-pro-3000/",
+    "en-GB": "https://forgetorque.example.com/en-gb/products/forgetorque-pro-3000/",
+    "fr-FR": "https://forgetorque.example.com/fr-fr/produits/forgetorque-pro-3000/",
+    "fr-CA": "https://forgetorque.example.com/fr-ca/produits/forgetorque-pro-3000/",
+    "es-ES": "https://forgetorque.example.com/es-es/productos/forgetorque-pro-3000/",
+    "es-MX": "https://forgetorque.example.com/es-mx/productos/forgetorque-pro-3000/",
+    "de-DE": "https://forgetorque.example.com/de-de/produkte/forgetorque-pro-3000/",
+    "it-IT": "https://forgetorque.example.com/it-it/prodotti/forgetorque-pro-3000/",
+    "pt-BR": "https://forgetorque.example.com/pt-br/produtos/forgetorque-pro-3000/",
+    "nl-NL": "https://forgetorque.example.com/nl-nl/producten/forgetorque-pro-3000/",
+    "pl-PL": "https://forgetorque.example.com/pl-pl/produkty/forgetorque-pro-3000/",
+    "ja-JP": "https://forgetorque.example.com/ja-jp/products/forgetorque-pro-3000/"
+  }
+}

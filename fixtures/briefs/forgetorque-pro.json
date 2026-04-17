@@ -1,0 +1,32 @@
+{
+  "id": "fixture-forgetorque-pro",
+  "name": "ForgeTorque Pro — International Launch",
+  "brief": {
+    "product_name": "ForgeTorque Pro 3000",
+    "category": "Industrial Torque Tools",
+    "key_features": [
+      "Real-time torque calibration feedback via integrated display",
+      "±0.5% accuracy across full torque range",
+      "Bluetooth sync to maintenance management systems",
+      "IP68 waterproof and dustproof rating",
+      "Ergonomic anti-fatigue grip designed for 8-hour shift use",
+      "Auto-shutdown memory saves last 50 torque readings",
+      "Compatible with ISO, DIN, and ANSI fastener standards"
+    ],
+    "target_audience": "Industrial maintenance engineers, MRO procurement managers, aerospace assembly technicians",
+    "price_point": "€2,400 (professional tier) — site licensing available",
+    "usp": "The only torque wrench with real-time calibration drift detection — catches calibration errors before they cause failures",
+    "avoid_words": ["cheap", "budget", "affordable", "simple", "easy"],
+    "extra_context": "ISO 9001:2015 certified manufacturing. Used by Tier-1 aerospace OEMs and 4,000+ MRO facilities worldwide. 3-year calibration warranty. ATEX certified for explosive atmospheres."
+  },
+  "brand_voice": {
+    "tone": "Authoritative and precise — we speak to engineers who distrust marketing language",
+    "style": "Technical depth first. Factual claims only. Short declarative sentences. No superlatives unless verifiable. Metrics wherever possible.",
+    "keywords": ["calibration", "precision", "ISO", "torque", "ForgeTorque"],
+    "avoid_words": ["revolutionary", "game-changing", "best-in-class", "seamless", "cutting-edge"],
+    "sample_copy": "The ForgeTorque Pro 3000 delivers ±0.5% accuracy across its full torque range — a specification independently verified to ISO 6789-2:2017. When calibration drift exceeds 0.3%, the integrated display alerts the operator before the fastener is applied. This is not a feature. It is a requirement for aerospace-grade assembly."
+  },
+  "target_locales": ["en-US", "en-GB", "fr-FR", "fr-CA", "es-ES", "es-MX", "de-DE", "it-IT", "pt-BR", "nl-NL", "pl-PL", "ja-JP"],
+  "content_types": ["product_description", "ad_copy", "meta_tags", "landing_page_copy"],
+  "translation_mode": "both"
+}

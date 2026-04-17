@@ -1,0 +1,27 @@
+{
+  "title": "ForgeTorque Pro 3000 — Professionelles Drehmoment-Werkzeug",
+  "content": "<p>Der ForgeTorque Pro 3000 erkennt Kalibrierungsabweichungen, bevor sie zu Fehlern führen. Mit ±0,5 % Genauigkeit über den gesamten Drehmomentbereich — unabhängig nach ISO 6789-2:2017 zertifiziert. IP68, ATEX-Zulassung für explosionsgefährdete Bereiche, kompatibel mit ISO-, DIN- und ANSI-Normen.</p><p>Eingesetzt bei Tier-1-Luft- und Raumfahrt-OEMs und über 4.000 MRO-Betrieben weltweit. ISO 9001:2015-zertifizierte Fertigung. 3 Jahre Kalibrierungsgarantie.</p>",
+  "excerpt": "Das einzige Drehmoment-Werkzeug mit Echtzeit-Kalibrierungsdrift-Erkennung. unabhängig verifiziert ±0,5% Genauigkeit. ATEX-zertifiziert.",
+  "meta": {
+    "_yoast_wpseo_title": "ForgeTorque Pro 3000 — Echtzeit-Drehmomentkalibrierung %%sep%% %%sitename%%",
+    "_yoast_wpseo_metadesc": "±0,5% Drehmomentgenauigkeit mit Live-Kalibrierungsdrift-Erkennung. unabhängig zertifiziert, ATEX-zertifiziert. Eingesetzt bei Luft- und Raumfahrt-OEMs und 4.000+ MRO-Betrieben.",
+    "_yoast_wpseo_focuskw": "Drehmomentschlüssel Kalibrierung",
+    "wpml_language": "de",
+    "wpml_original_id": 1001
+  },
+  "hreflang": {
+    "en-US": "https://forgetorque.example.com/products/forgetorque-pro-3000/",
+    "en-GB": "https://forgetorque.example.com/en-gb/products/forgetorque-pro-3000/",
+    "fr-FR": "https://forgetorque.example.com/fr-fr/produits/forgetorque-pro-3000/",
+    "fr-CA": "https://forgetorque.example.com/fr-ca/produits/forgetorque-pro-3000/",
+    "es-ES": "https://forgetorque.example.com/es-es/productos/forgetorque-pro-3000/",
+    "es-MX": "https://forgetorque.example.com/es-mx/productos/forgetorque-pro-3000/",
+    "de-DE": "https://forgetorque.example.com/de-de/produkte/forgetorque-pro-3000/",
+    "it-IT": "https://forgetorque.example.com/it-it/prodotti/forgetorque-pro-3000/",
+    "pt-BR": "https://forgetorque.example.com/pt-br/produtos/forgetorque-pro-3000/",
+    "nl-NL": "https://forgetorque.example.com/nl-nl/producten/forgetorque-pro-3000/",
+    "pl-PL": "https://forgetorque.example.com/pl-pl/produkty/forgetorque-pro-3000/",
+    "ja-JP": "https://forgetorque.example.com/ja-jp/products/forgetorque-pro-3000/",
+    "x-default": "https://forgetorque.example.com/products/forgetorque-pro-3000/"
+  }
+}

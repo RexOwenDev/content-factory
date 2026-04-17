@@ -1,0 +1,31 @@
+{
+  "id": "fixture-luxdermis-serum",
+  "name": "LuxDermis — EU & APAC Expansion",
+  "brief": {
+    "product_name": "LuxDermis Renewal Serum",
+    "category": "Premium Skincare",
+    "key_features": [
+      "23% Vitamin C complex with stable ascorbic acid derivative",
+      "Hyaluronic acid triple-weight formula (high, medium, low molecular)",
+      "Clinically tested: 94% reduction in fine lines after 8 weeks",
+      "Fragrance-free, dermatologist-tested, suitable for sensitive skin",
+      "Airless pump packaging — no oxidation, 18-month shelf life",
+      "Vegan and cruelty-free certified (Leaping Bunny)"
+    ],
+    "target_audience": "Women 30–55, premium skincare buyers, ingredient-conscious consumers, dermatologically sensitive skin",
+    "price_point": "$98 (30ml) — $165 (60ml)",
+    "usp": "Clinical-grade Vitamin C stability that actually reaches the dermis — 94% of users saw measurable fine line reduction in 8 weeks",
+    "avoid_words": ["anti-aging", "wrinkle-erasing", "miracle", "instant", "overnight"],
+    "extra_context": "Clinical trial data available. Dermatologist co-developed. COSMOS certified organic. Free of parabens, sulfates, synthetic fragrance."
+  },
+  "brand_voice": {
+    "tone": "Warm and confident — science-backed without being cold. We respect our customers' intelligence.",
+    "style": "Clear, honest, ingredient-forward. Lead with the science, close with the feeling. No puffery.",
+    "keywords": ["clinical", "Vitamin C", "LuxDermis", "dermis", "hyaluronic"],
+    "avoid_words": ["anti-aging", "miracle", "instant", "wrinkle-free", "flawless"],
+    "sample_copy": "Most Vitamin C serums oxidize before they reach your skin. LuxDermis uses a stabilized ascorbic acid derivative — a form that stays active in the formula and absorbs effectively into the dermis. The result: 94% of participants in our 8-week clinical trial saw a measurable reduction in fine lines. That is not marketing. That is data."
+  },
+  "target_locales": ["en-US", "en-GB", "fr-FR", "de-DE", "it-IT", "pt-BR", "ja-JP"],
+  "content_types": ["product_description", "ad_copy", "meta_tags"],
+  "translation_mode": "claude_transcreation"
+}

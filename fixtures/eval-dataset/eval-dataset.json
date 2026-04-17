@@ -1,0 +1,310 @@
+[
+  {
+    "id": "eval-001",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "en-US",
+    "content_type": "product_description",
+    "content": "The ForgeTorque Pro 3000 detects calibration drift before it causes a failure. ±0.5% accuracy across the full torque range, independently verified to ISO 6789-2:2017. IP68, ATEX certified. Used by aerospace OEMs and 4,000+ MRO facilities globally.",
+    "expected_score": {
+      "score": 91,
+      "tone_match": 94,
+      "brand_voice_adherence": 92,
+      "cultural_accuracy": 88,
+      "hallucination_flag": false,
+      "reasoning": "Short declarative sentences, metric-first, no superlatives. All facts verifiable from brief."
+    }
+  },
+  {
+    "id": "eval-002",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "de-DE",
+    "content_type": "product_description",
+    "content": "Der ForgeTorque Pro 3000 ist das revolutionärste Drehmoment-Werkzeug auf dem Markt — bahnbrechende Technologie für seamless calibration management. Das beste Produkt seiner Klasse.",
+    "expected_score": {
+      "score": 18,
+      "tone_match": 15,
+      "brand_voice_adherence": 10,
+      "cultural_accuracy": 28,
+      "hallucination_flag": false,
+      "reasoning": "Contains multiple banned words: 'revolutionärste' (revolutionary), 'bahnbrechende' (game-changing), 'seamless', 'beste seiner Klasse' (best-in-class). Brand voice explicitly forbids superlatives and unverifiable claims."
+    }
+  },
+  {
+    "id": "eval-003",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "fr-FR",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: Détectez les dérives avant les défaillances\nBODY: Précision ±0,5% certifiée en laboratoire indépendant. Alertes en temps réel avant l'application. Utilisé par les OEM aéronautiques et 4 000+ sites MRO.\nCTA: Demander une démo",
+    "expected_score": {
+      "score": 88,
+      "tone_match": 90,
+      "brand_voice_adherence": 89,
+      "cultural_accuracy": 86,
+      "hallucination_flag": false,
+      "reasoning": "Headline benefit-driven and within character limits. Facts accurate to brief. French register appropriate for B2B industrial sector. No banned words."
+    }
+  },
+  {
+    "id": "eval-004",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "ja-JP",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: キャリブレーション誤差を、発生前に検出\nBODY: ±0.5%精度を独立認証で保証。誤差が0.3%超過時点でアラート発報。航空機OEM各社他4,000以上のMRO施設が採用。\nCTA: デモをリクエスト",
+    "expected_score": {
+      "score": 87,
+      "tone_match": 88,
+      "brand_voice_adherence": 87,
+      "cultural_accuracy": 87,
+      "hallucination_flag": false,
+      "reasoning": "Japanese B2B register is appropriately formal. Technical claims match brief. Headline uses natural Japanese structure rather than literal translation."
+    }
+  },
+  {
+    "id": "eval-005",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "en-US",
+    "content_type": "meta_tags",
+    "content_json": {
+      "title": "ForgeTorque Pro 3000 — Real-Time Torque Calibration Tool | Independently Verified",
+      "description": "±0.5% torque accuracy with live drift detection. Alerts before fastener application. ATEX certified, used by aerospace OEMs. Request demo.",
+      "keywords": "torque wrench, calibration tool, MRO torque, ISO 6789, ATEX torque wrench, drift detection"
+    },
+    "expected_score": {
+      "score": 89,
+      "tone_match": 89,
+      "brand_voice_adherence": 90,
+      "cultural_accuracy": 88,
+      "hallucination_flag": false,
+      "reasoning": "Title 68 chars — slightly over 60-char ideal but includes critical brand term. Description within 155 chars with USP and CTA. Keywords cover primary intent terms."
+    }
+  },
+  {
+    "id": "eval-006",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "es-MX",
+    "content_type": "product_description",
+    "content": "El ForgeTorque Pro 3000 es su solución perfecta para necesidades de torque. Con tecnología revolucionaria y precio asequible de solo €2,400, este producto innovador cambiará su negocio. ¡Compre ahora con descuento especial!",
+    "expected_score": {
+      "score": 12,
+      "tone_match": 8,
+      "brand_voice_adherence": 5,
+      "cultural_accuracy": 24,
+      "hallucination_flag": true,
+      "reasoning": "HALLUCINATION: 'precio asequible' (affordable) — product is professional tier and avoid_words includes 'affordable'. Banned words: 'revolucionaria' (revolutionary), 'innovador'. No factual technical claims from brief. Tone is consumer sales, not B2B engineering. Hallucination flag set for 'descuento especial' — no discount mentioned in brief."
+    }
+  },
+  {
+    "id": "eval-007",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "en-US",
+    "content_type": "product_description",
+    "content": "Most Vitamin C serums oxidize before they reach your skin. LuxDermis uses a stabilized ascorbic acid derivative that stays active and absorbs into the dermis. 94% of participants saw measurable reduction in fine lines in 8 weeks — clinical trial data available. Fragrance-free, Leaping Bunny certified, COSMOS organic.",
+    "expected_score": {
+      "score": 93,
+      "tone_match": 95,
+      "brand_voice_adherence": 94,
+      "cultural_accuracy": 90,
+      "hallucination_flag": false,
+      "reasoning": "Leads with science mechanism, closes with credentials. Matches sample copy voice precisely. Clinical claim is accurate to brief. No banned words (anti-aging, miracle, instant). Ingredient-forward."
+    }
+  },
+  {
+    "id": "eval-008",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "fr-FR",
+    "content_type": "product_description",
+    "content": "La plupart des sérums à la Vitamine C s'oxydent avant d'atteindre votre peau. LuxDermis utilise un dérivé d'acide ascorbique stabilisé qui reste actif dans la formule et s'absorbe efficacement jusqu'au derme. Résultat clinique : 94% des participants ont constaté une réduction mesurable des rides après 8 semaines.",
+    "expected_score": {
+      "score": 90,
+      "tone_match": 91,
+      "brand_voice_adherence": 92,
+      "cultural_accuracy": 87,
+      "hallucination_flag": false,
+      "reasoning": "French register is appropriately formal for premium skincare. Science mechanism preserved. Clinical claim exact match to brief. No banned words in French. Dermis/derme keyword present."
+    }
+  },
+  {
+    "id": "eval-009",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "ja-JP",
+    "content_type": "product_description",
+    "content": "LuxDermisリニューアルセラムは奇跡の若返り効果を実現します！即効性アンチエイジング成分でしわをゼロに！24時間で効果が出る保証付き！",
+    "expected_score": {
+      "score": 4,
+      "tone_match": 3,
+      "brand_voice_adherence": 2,
+      "cultural_accuracy": 8,
+      "hallucination_flag": true,
+      "reasoning": "HALLUCINATION: '24時間で効果' (24-hour results) — brief states 8-week clinical timeline. Multiple banned words: '奇跡' (miracle), 'アンチエイジング' (anti-aging), '即効' (instant), 'しわをゼロ' (wrinkle-free). Japanese regulatory standards prohibit absolute efficacy claims. Tone is infomercial, contradicts 'warm confidence' brand voice."
+    }
+  },
+  {
+    "id": "eval-010",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "en-US",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: 94% measurable results. 8 weeks. Clinical data.\nBODY: LuxDermis stabilized Vitamin C actually reaches the dermis — clinically proven, dermatologist co-developed, Leaping Bunny certified. Free of fragrance, parabens, sulfates.\nCTA: Shop now — free shipping over $75",
+    "expected_score": {
+      "score": 91,
+      "tone_match": 92,
+      "brand_voice_adherence": 93,
+      "cultural_accuracy": 89,
+      "hallucination_flag": false,
+      "reasoning": "Headline leads with data, not claim. Body is concise and ingredient-forward. CTA includes shipping threshold not in brief — acceptable as common e-commerce convention. No banned words."
+    }
+  },
+  {
+    "id": "eval-011",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "pt-BR",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: 94% viram redução mensurável em 8 semanas\nBODY: O LuxDermis usa vitamina C estabilizada que realmente chega à derme — comprovado clinicamente, desenvolvido com dermatologista. Sem fragrância, sem parabenos.\nCTA: Compre agora — frete grátis",
+    "expected_score": {
+      "score": 87,
+      "tone_match": 88,
+      "brand_voice_adherence": 89,
+      "cultural_accuracy": 85,
+      "hallucination_flag": false,
+      "reasoning": "Brazilian Portuguese register is appropriately warm and direct. 'você' form implied. Clinical claim preserved exactly. Leaping Bunny credential omitted — minor penalty. No banned words in PT-BR."
+    }
+  },
+  {
+    "id": "eval-012",
+    "brief_id": "fixture-luxdermis-serum",
+    "locale": "de-DE",
+    "content_type": "meta_tags",
+    "content_json": {
+      "title": "LuxDermis Renewal Serum — Klinisch geprüftes Vitamin-C-Serum",
+      "description": "Stabilisiertes 23% Vitamin-C-Serum, klinisch bewiesen zur Reduzierung von feinen Linien in 8 Wochen. Ohne Duftstoffe. Derm. getestet. LuxDermis kaufen.",
+      "keywords": "Vitamin C Serum, klinische Hautpflege, Hyaluronsäure Serum, LuxDermis, Dermis Pflege, Anti-Falten Serum"
+    },
+    "expected_score": {
+      "score": 82,
+      "tone_match": 83,
+      "brand_voice_adherence": 80,
+      "cultural_accuracy": 84,
+      "hallucination_flag": false,
+      "reasoning": "German SEO title within limits. 'Anti-Falten' (anti-wrinkle) in keywords is borderline given avoid_words, but acceptable in meta context. Description accurate to brief. German skincare market expects clinical language."
+    }
+  },
+  {
+    "id": "eval-013",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "en-US",
+    "content_type": "product_description",
+    "content": "Your city doesn't need another car. The VeloCargo City 250W folds in seconds, carries 55kg of cargo, and covers 80km on a single charge. Parks in your hallway. Fits in your elevator. Costs less to run for a year than one month of city parking.",
+    "expected_score": {
+      "score": 95,
+      "tone_match": 97,
+      "brand_voice_adherence": 96,
+      "cultural_accuracy": 93,
+      "hallucination_flag": false,
+      "reasoning": "Near-exact match to sample copy voice. Punchy short sentences. Urban vernacular. Benefits-first without being casual. All facts in brief. USP (folds) prominent. No banned words."
+    }
+  },
+  {
+    "id": "eval-014",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "nl-NL",
+    "content_type": "product_description",
+    "content": "Jouw stad heeft geen extra auto nodig. De VeloCargo City 250W klapt in seconden op, vervoert 55 kg lading en rijdt 80 km op één acculading. Staat in je hal. Past in de lift. Kost minder om een jaar te rijden dan één maand stadsparking.",
+    "expected_score": {
+      "score": 88,
+      "tone_match": 89,
+      "brand_voice_adherence": 90,
+      "cultural_accuracy": 86,
+      "hallucination_flag": false,
+      "reasoning": "Dutch register is appropriately direct and pragmatic, matching Dutch cultural context preset. Jij/jouw form (informal but not casual) suits urban commuter audience. All facts preserved. Brand voice maintained in Dutch idiom."
+    }
+  },
+  {
+    "id": "eval-015",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "fr-FR",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: Le seul vélo cargo EU-légal qui se plie\nBODY: 80 km d'autonomie, 55 kg de capacité cargo, pliage en quelques secondes. Le VeloCargo City 250W se range dans votre couloir — pas dans la rue. Norme EN 15194, frein Shimano, 2 ans de garantie.\nCTA: Commandez — livraison UE 3–5 jours",
+    "expected_score": {
+      "score": 87,
+      "tone_match": 88,
+      "brand_voice_adherence": 87,
+      "cultural_accuracy": 86,
+      "hallucination_flag": false,
+      "reasoning": "French register is appropriately direct while slightly more formal than EN-US. USP preserved. Key features present. CTA has delivery timeframe from brief. No banned words."
+    }
+  },
+  {
+    "id": "eval-016",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "de-DE",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: Das einzige EU-legale Cargo-E-Bike, das klappt\nBODY: 80 km Reichweite, 55 kg Ladekapazität, in Sekunden gefaltet. Das VeloCargo City 250W parkt in Ihrem Flur — nicht auf der Straße. EN 15194 konform, Shimano-Scheibenbremsen, 2 Jahre Garantie.\nCTA: Jetzt bestellen — EU-Lieferung 3–5 Tage",
+    "expected_score": {
+      "score": 86,
+      "tone_match": 87,
+      "brand_voice_adherence": 86,
+      "cultural_accuracy": 85,
+      "hallucination_flag": false,
+      "reasoning": "German Sie-form (formal) appropriate for e-commerce. Metric facts preserved. Tone is energetic but controlled — German audiences distrust over-selling. CTA direct. No banned words."
+    }
+  },
+  {
+    "id": "eval-017",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "en-US",
+    "content_type": "landing_page_copy",
+    "content": "HERO_HEADLINE: The only cargo e-bike that folds\nSUBHEADLINE: For urban commuters and small business owners who park inside, not on the street\nBENEFIT_1: Folds in seconds | Fits standard elevators and most car trunks\nBENEFIT_2: 80km range | Integrated Samsung battery, single charge\nBENEFIT_3: 55kg cargo | 40kg rear rack + 15kg front basket\nCTA_PRIMARY: Order now\nCTA_SECONDARY: See all colors",
+    "expected_score": {
+      "score": 90,
+      "tone_match": 91,
+      "brand_voice_adherence": 92,
+      "cultural_accuracy": 88,
+      "hallucination_flag": false,
+      "reasoning": "Structured format followed exactly. Hero headline is USP in 7 words. Subheadline identifies primary buyer. Benefits are specific and factual. CTAs are concise and action-oriented."
+    }
+  },
+  {
+    "id": "eval-018",
+    "brief_id": "fixture-velocargo-bike",
+    "locale": "it-IT",
+    "content_type": "product_description",
+    "content": "La tua città non ha bisogno di un'altra auto. Il VeloCargo City 250W si piega in pochi secondi, trasporta 55 kg di carico e percorre 80 km con una singola carica. Parcheggia nel corridoio. Entra nell'ascensore. Costa meno da utilizzare per un anno rispetto a un mese di parcheggio in città.",
+    "expected_score": {
+      "score": 86,
+      "tone_match": 87,
+      "brand_voice_adherence": 88,
+      "cultural_accuracy": 83,
+      "hallucination_flag": false,
+      "reasoning": "Italian register conveys warmth and practicality. Punchy sentences preserved in Italian idiom. Cultural context: Italian audiences appreciate quality aesthetics — slight penalty for not emphasizing design/colors available. All facts accurate."
+    }
+  },
+  {
+    "id": "eval-019",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "pl-PL",
+    "content_type": "product_description",
+    "content": "ForgeTorque Pro 3000 wykrywa dryf kalibracji zanim dojdzie do awarii. Precyzja ±0,5% w pełnym zakresie momentu obrotowego — niezależnie certyfikowana zgodnie z ISO 6789-2:2017. Ochrona IP68, certyfikat ATEX. Stosowany przez OEM-y lotnicze i ponad 4 000 zakładów MRO na całym świecie.",
+    "expected_score": {
+      "score": 85,
+      "tone_match": 86,
+      "brand_voice_adherence": 85,
+      "cultural_accuracy": 84,
+      "hallucination_flag": false,
+      "reasoning": "Polish B2B register is formal and quality-focused. Technical claims accurate. Polish market values European certification positioning — ISO and certification references prominent. Short declarative sentences maintained."
+    }
+  },
+  {
+    "id": "eval-020",
+    "brief_id": "fixture-forgetorque-pro",
+    "locale": "en-GB",
+    "content_type": "ad_copy",
+    "content": "HEADLINE: Catch calibration drift before failures occur\nBODY: The ForgeTorque Pro 3000 alerts operators the moment calibration exceeds ±0.3% — before the fastener is applied. independently verified ±0.5% accuracy. Trusted by aerospace OEMs and 4,000+ MRO facilities.\nCTA: Request a demonstration",
+    "expected_score": {
+      "score": 89,
+      "tone_match": 90,
+      "brand_voice_adherence": 89,
+      "cultural_accuracy": 88,
+      "hallucination_flag": false,
+      "reasoning": "British English adaptations: 'occur' (not 'happen'), 'Trusted by' (not 'Used by' — slightly more formal), 'demonstration' (not 'demo'). Tone slightly more understated than US version. All facts accurate."
+    }
+  }
+]

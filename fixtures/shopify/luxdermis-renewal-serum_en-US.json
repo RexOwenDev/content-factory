@@ -1,0 +1,37 @@
+{
+  "product": {
+    "title": "LuxDermis Renewal Serum",
+    "body_html": "<p>Most Vitamin C serums oxidize before they reach your skin. LuxDermis uses a stabilized ascorbic acid derivative that stays active and absorbs into the dermis. Clinical result: 94% of participants saw a measurable reduction in fine lines in 8 weeks.</p><p>23% Vitamin C complex. Triple-weight hyaluronic acid. Fragrance-free, dermatologist co-developed, Leaping Bunny certified. Airless pump — 18-month shelf life.</p>",
+    "metafields": [
+      {
+        "namespace": "seo",
+        "key": "title",
+        "value": "LuxDermis Renewal Serum — Clinical Vitamin C for Visible Results",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "seo",
+        "key": "description",
+        "value": "Stabilized 23% Vitamin C serum clinically proven to reduce fine lines in 8 weeks. Fragrance-free, dermatologist co-developed. Shop LuxDermis.",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "content_factory",
+        "key": "generated_locale",
+        "value": "en-US",
+        "type": "single_line_text_field"
+      },
+      {
+        "namespace": "content_factory",
+        "key": "keywords",
+        "value": "vitamin C serum, clinical skincare, fine line serum, hyaluronic acid serum, LuxDermis, dermatologist serum",
+        "type": "single_line_text_field"
+      }
+    ]
+  },
+  "locale": "en-US",
+  "translations": {
+    "title": "LuxDermis Renewal Serum",
+    "body_html": "<p>Most Vitamin C serums oxidize before they reach your skin. LuxDermis uses a stabilized ascorbic acid derivative that absorbs into the dermis. 94% saw measurable fine line reduction in 8 weeks.</p>"
+  }
+}
