@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint src",
     "typecheck": "tsc --noEmit",
     "db:seed": "npx tsx supabase/seed.ts",
     "generate:hero": "node scripts/generate-hero.mjs",
@@ -34,6 +34,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22",
     "@types/react": "^19",
