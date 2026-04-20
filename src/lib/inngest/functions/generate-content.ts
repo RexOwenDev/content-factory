@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { inngest } from '../client'
 import { createClaudeAdapter } from '../../adapters/claude'
 import { createDeepLAdapter } from '../../adapters/deepl'
@@ -6,7 +7,7 @@ import { createOutput } from '../../db/queries/outputs'
 import { getProjectWithMarkets } from '../../db/queries/projects'
 import { supabaseAdmin } from '../../db/client'
 import { EVAL_THRESHOLDS } from '../../config'
-import type { ContentType, Locale } from '../../types'
+import type { Locale } from '../../types'
 
 // ─── Fan-out: project.submitted → N×M content jobs ───────────────────────────
 
@@ -18,10 +19,9 @@ export const generateContentFunction = inngest.createFunction(
   },
   { event: 'contentfactory/project.submitted' },
   async ({ event, step }) => {
-    const { projectId, adapterMode } = event.data as {
-      projectId: string
-      adapterMode: 'fixture' | 'live'
-    }
+    const { projectId, adapterMode } = z
+      .object({ projectId: z.string().uuid(), adapterMode: z.enum(['fixture', 'live']) })
+      .parse(event.data)
 
     // 1. Load project + markets
     const result = await step.run('load-project', async () => {
@@ -43,9 +43,10 @@ export const generateContentFunction = inngest.createFunction(
 
     // 3. Update project status → running
     await step.run('set-project-running', async () => {
-      await (supabaseAdmin.from('projects') as any)
+      const { error } = await (supabaseAdmin.from('projects') as any)
         .update({ status: 'running' })
         .eq('id', projectId)
+      if (error) throw new Error(`Failed to set project running: ${error.message}`)
     })
 
     // 4. Fan-out: fire one job.started event per content job.
@@ -85,12 +86,14 @@ export const translateMarketFunction = inngest.createFunction(
   },
   { event: 'contentfactory/job.started' },
   async ({ event, step }) => {
-    const { jobId, projectId, contentType, adapterMode } = event.data as {
-      jobId: string
-      projectId: string
-      contentType: ContentType
-      adapterMode: 'fixture' | 'live'
-    }
+    const { jobId, projectId, contentType, adapterMode } = z
+      .object({
+        jobId: z.string().uuid(),
+        projectId: z.string().uuid(),
+        contentType: z.enum(['product_description', 'ad_copy', 'meta_tags', 'landing_page_copy'] as const),
+        adapterMode: z.enum(['fixture', 'live']),
+      })
+      .parse(event.data)
 
     const claude = createClaudeAdapter(adapterMode)
     const deepl = createDeepLAdapter(adapterMode)
@@ -169,8 +172,13 @@ export const translateMarketFunction = inngest.createFunction(
       await step.run('set-transcreating', () => updateJobStatus(jobId, 'transcreating'))
 
       transcreatedContent = await step.run('claude-refine', async () => {
-        // Feed DeepL output as context for Claude to refine cultural register
-        const enrichedSource = `[DeepL draft for reference]\n${deeplTranslation}\n\n[Original EN-US]\n${sourceContent.content}`
+        // Strip control chars from DeepL response before embedding in Claude prompt (M6).
+        const safeDeeplDraft = (deeplTranslation ?? '')
+          .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, ' ')
+          .trim()
+        const enrichedSource = safeDeeplDraft
+          ? `[DeepL draft for reference]\n${safeDeeplDraft}\n\n[Original EN-US]\n${sourceContent.content}`
+          : sourceContent.content
         return claude.transcreate(
           enrichedSource,
           'en-US',

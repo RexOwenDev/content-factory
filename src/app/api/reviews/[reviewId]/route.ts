@@ -49,7 +49,9 @@ export async function PATCH(req: NextRequest, { params }: Props) {
         .eq('id', reviewRow.output_id)
         .single()
       if (output?.job_id) {
-        await updateJobStatus(output.job_id, 'approved').catch(() => null)
+        await updateJobStatus(output.job_id, 'approved').catch((e: Error) => {
+          console.error('[review PATCH] job status sync failed:', e.message)
+        })
       }
     }
 
@@ -76,7 +78,9 @@ export async function PATCH(req: NextRequest, { params }: Props) {
         .eq('id', reviewRow.output_id)
         .single()
       if (output?.job_id) {
-        await updateJobStatus(output.job_id, 'rejected').catch(() => null)
+        await updateJobStatus(output.job_id, 'rejected').catch((e: Error) => {
+          console.error('[review PATCH] job status sync failed:', e.message)
+        })
       }
     }
 
