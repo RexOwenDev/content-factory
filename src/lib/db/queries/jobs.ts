@@ -19,12 +19,14 @@ export async function createContentJobsForProject(
     }))
   )
 
+  // upsert with ignoreDuplicates makes this step safe to retry: if Inngest re-runs
+  // the fan-out function, duplicate rows are skipped (requires migration 0002).
   const { data, error } = await (supabaseAdmin.from('content_jobs') as any)
-    .insert(rows)
+    .upsert(rows, { onConflict: 'project_id,market_id,content_type', ignoreDuplicates: true })
     .select()
 
   if (error) throw new Error(`Failed to create content jobs: ${error.message}`)
-  return data as ContentJob[]
+  return (data ?? []) as ContentJob[]
 }
 
 export async function updateJobStatus(

@@ -172,8 +172,13 @@ export const translateMarketFunction = inngest.createFunction(
       await step.run('set-transcreating', () => updateJobStatus(jobId, 'transcreating'))
 
       transcreatedContent = await step.run('claude-refine', async () => {
-        // Feed DeepL output as context for Claude to refine cultural register
-        const enrichedSource = `[DeepL draft for reference]\n${deeplTranslation}\n\n[Original EN-US]\n${sourceContent.content}`
+        // Strip control chars from DeepL response before embedding in Claude prompt (M6).
+        const safeDeeplDraft = (deeplTranslation ?? '')
+          .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, ' ')
+          .trim()
+        const enrichedSource = safeDeeplDraft
+          ? `[DeepL draft for reference]\n${safeDeeplDraft}\n\n[Original EN-US]\n${sourceContent.content}`
+          : sourceContent.content
         return claude.transcreate(
           enrichedSource,
           'en-US',
